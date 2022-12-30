@@ -40,7 +40,6 @@ body {
     color: white;
     font-size: 1rem;
     border-bottom: 3px solid transparent;
-    transition: all 1s ease;
 }
 .nav-menu li a:hover {
     border-bottom: 3px solid white;
