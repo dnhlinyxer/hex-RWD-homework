@@ -1,0 +1,241 @@
+/* feature */
+.feature {
+    background-color: #efe9e7;
+    padding: 3rem 0;
+}
+.feature-container {
+    max-width: 1024px;
+    margin: 0 auto;
+}
+.feature-container h4 {
+    text-align: center;
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #3d1101;
+    margin-bottom: 2rem;
+    position: relative;
+}
+.feature-container h4::before,
+.feature-container h4::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    background-color: gray;
+    width: 17%;
+    height: 1px;
+}
+.feature-container h4::before {
+    left: 20%;
+}
+.feature-container h4::after {
+    right: 20%;
+}
+.feature-list {
+    display: flex;
+    justify-content: space-between;
+    margin: 0 auto;
+}
+.feature-list li {
+    width: 33%;
+    text-align: center;
+    color: #3d1101;
+}
+.feature-list li img {
+    border-radius: 50%;
+}
+.feature-list li h5 {
+    font-size: 1.3rem;
+    font-weight: bold;
+    margin: 1rem 0;
+}
+.feature-list li p {
+    text-align: left;
+    width: 90%;
+    margin: 0 auto 1rem;
+}
+@media (max-width:569px) {
+    .feature-list {
+        flex-direction: column;
+        align-items: center;
+    }
+    .feature-list li {
+        width: 80%;
+    }
+}
+
+/* chef */
+.chef {
+    background-color: #3d1101;
+}
+.chef-container {
+    max-width: 1024px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+}
+.chef-text {
+    width: 40%;
+    color: #efe9e7;
+    padding: 3rem 2rem;
+}
+.chef-title {
+    margin-bottom: 1.5rem;
+}
+.chef-title h3 {
+    font-size: 1.3rem;
+}
+.chef-title h4 {
+    font-size: 1.1rem;
+}
+@media (max-width: 767px) {
+    .chef-container img {
+        object-fit: cover;
+        width: 50%;
+    }
+}
+@media (max-width:569px) {
+    .chef-container {
+        flex-direction: column;
+    }
+    .chef-container img {
+        width: 100%;
+        object-fit: cover;
+    }
+    .chef-text {
+        width: 100%;
+    }
+}
+
+/* comment */
+.comment {
+    background-color: #efe9e7;
+    padding: 3rem 0;
+}
+.comment-container {
+    max-width: 1024px;
+    margin: 0 auto;
+    color: #3d1101;
+}
+.comment-container h4 {
+    text-align: center;
+    font-size: 1.3rem;
+    font-weight: bold;
+    margin-bottom: 2.5rem;
+}
+.comment-list {
+    display: flex;
+}
+.comment-list li {
+    display: flex;
+    align-items: flex-start;
+}
+.comment-list img {
+    border-radius: 50%;
+    margin: 0 1rem;
+}
+.comment-text {
+    display: flex;
+    flex-direction: column;
+}
+.comment-text h5 {
+    font-size: 1.1rem;
+    font-weight: bold;
+    margin: 20px 0;
+}
+.comment-text p {
+    font-weight: bold;
+    margin-bottom: 2rem;
+}
+.comment-text span {
+    align-self: flex-end;
+}
+@media (max-width:569px) {
+    .comment-list {
+        flex-direction: column;
+        align-items: center;
+    }
+    .comment-list li {
+        width: 80%;
+    }
+}
+
+/* reserve */
+.reserve {
+    background-color: #f6f4f3;
+    padding: 3rem 0;
+}
+.reserve-container {
+    max-width: 1024px;
+    margin: 0 auto;
+    color: #3d1101;
+}
+.reserve-container h3 {
+    text-align: center;
+    font-size: 1.5rem;
+    margin-bottom: 3rem;
+}
+.reserve-info {
+    display: flex;
+    justify-content: space-around;
+}
+.reserve-info img {
+    width: 45%;
+    object-fit: cover;
+}
+.reserve-form {
+    display: flex;
+    flex-direction: column;
+    width: 45%;
+}
+.reserve-form label {
+    margin: 5px 0;
+}
+.reserve-form input {
+    padding: 5px 10px;
+}
+.reserve-form input:focus {
+    background-color: rgba(206, 55, 0, 0.2);
+}
+.reserve-form input:last-of-type {
+    margin-bottom: 5px;
+}
+.reserve-form .vegan-radio {
+    margin-bottom: 20px;
+}
+.reserve-form .vegan-radio input:nth-child(2) {
+    margin-right: 40px;
+}
+.reserve-form .button {
+    align-self: flex-end;
+}
+.reserve-form .button button {
+    padding: 10px 20px;
+    color: #efe9e7;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+.reserve-form .button button:first-of-type {
+    background-color: #a09e9e;
+}
+.reserve-form .button button:first-of-type:hover {
+    background-color: rgb(105, 101, 101);
+}
+.reserve-form .button button:last-of-type {
+    background-color: #f56c32;
+}
+.reserve-form .button button:last-of-type:hover {
+    background-color: rgb(225, 78, 14);
+}
+@media (max-width:569px) {
+    .reserve-info {
+        flex-direction: column;
+        align-items: center;
+    }
+    .reserve-info img {
+        width: 95%;
+    }
+    .reserve-form {
+        width: 95%;
+    }
+}
