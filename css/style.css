@@ -814,8 +814,8 @@ footer {
     width: 17px;
     text-align: center;
     border-radius: 50%;
-    top: -7px;
-    right: -2px;
+    top: -5px;
+    right: -8px;
 }
 .product-toolbar .cart a:hover {
     color: rgb(137, 39, 3);
