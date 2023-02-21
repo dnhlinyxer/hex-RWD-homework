@@ -1,0 +1,233 @@
+/* home start */
+/* feature */
+.feature {
+    background-color: $bg-dark;
+    padding: 3rem 0;
+}
+.feature-container {
+    @include container;
+    h4 {
+        text-align: center;
+        font-size: 1.5rem;
+        font-weight: bold;
+        color: $font-color;
+        margin-bottom: 2rem;
+        position: relative;
+        &::before,
+        &::after {
+            content: "";
+            position: absolute;
+            top: 50%;
+            background-color: gray;
+            width: 17%;
+            height: 1px;
+        }
+        &::before {
+            left: 20%;
+        }
+        &::before {
+            right: 20%;
+        }
+    }
+}
+
+.feature-list {
+    display: flex;
+    justify-content: space-between;
+    @include mobile-row {
+        flex-direction: column;
+        align-items: center;
+    }
+    li {
+        width: 33%;
+        text-align: center;
+        color: $font-color;
+        @include mobile-row {
+            width: 80%;
+        }
+        img {
+            border-radius: 50%;
+        }
+        h5 {
+            font-size: 1.3rem;
+            font-weight: bold;
+            margin: 1rem 0;
+        }
+        p {
+            text-align: left;
+            width: 90%;
+            margin: 0 auto 1rem;
+        }
+    }
+}
+
+/* chef */
+.chef {
+    background-color: $font-color;
+}
+.chef-container {
+    @include container;
+    display: flex;
+    justify-content: center;
+    @include mobile-row {
+        flex-direction: column;
+    }
+}
+.chef-text {
+    width: 40%;
+    color: $bg-dark;
+    padding: 3rem 2rem;
+    @include mobile-row {
+        width: 100%;
+    }
+}
+.chef-title {
+    margin-bottom: 1.5rem;
+    h3 {
+        font-size: 1.3rem;
+    }
+    h4 {
+        font-size: 1.1rem;
+    }
+}
+.chef-container img {
+    @include pad {
+        object-fit: cover;
+        width: 50%;
+    }
+    @include mobile-row {
+        width: 100%;
+        object-fit: cover;
+    }
+}
+
+/* comment */
+.comment {
+    background-color: $bg-dark;
+    padding: 3rem 0;
+}
+.comment-container {
+    @include container;
+    color: $font-color;
+    h4 {
+        text-align: center;
+        font-size: 1.3rem;
+        font-weight: bold;
+        margin-bottom: 2.5rem;
+    }
+}
+.comment-list {
+    display: flex;
+    justify-content: space-between;
+    @include mobile-row {
+        flex-direction: column;
+        align-items: center;
+    }
+    li {
+        display: flex;
+        align-items: flex-start;
+        width: 31%;
+        @include mobile-row {
+            width: 80%;
+        }
+    }
+    img {
+        border-radius: 50%;
+        margin: 0 1rem;
+    }
+}
+.comment-text {
+    display: flex;
+    flex-direction: column;
+    h5 {
+        font-size: 1.1rem;
+        font-weight: bold;
+        margin: 20px 0;
+    }
+    p {
+        font-weight: bold;
+        margin-bottom: 2rem;
+    }
+    span {
+        align-self: flex-end;
+    }
+}
+
+/* reserve */
+.reserve {
+    background-color: #f6f4f3;
+    padding: 3rem 0;
+}
+.reserve-container {
+    @include container;
+    color: $font-color;
+    h3 {
+        text-align: center;
+        font-size: 1.5rem;
+        margin-bottom: 3rem;
+    }
+}
+.reserve-info {
+    display: flex;
+    justify-content: space-around;
+    @include mobile-row {
+        flex-direction: column;
+        align-items: center;
+    }
+    img {
+        width: 45%;
+        object-fit: cover;
+        @include mobile-row {
+            width: 95%;
+        }
+    }
+}
+.reserve-form {
+    display: flex;
+    flex-direction: column;
+    width: 45%;
+    @include mobile-row {
+        width: 95%;
+    }
+    label {
+        margin: 5px 0;
+    }
+    input {
+        padding: 5px 10px;
+        &:focus {
+            background-color: rgba(206, 55, 0, 0.2);
+        }
+        &:last-of-type {
+            margin-bottom: 5px;
+        }
+    }
+    .vegan-radio {
+        margin-bottom: 20px;
+        input:nth-child(2) {
+            margin-right: 40px;
+        }
+    }
+    .button {
+        align-self: flex-end;
+        button {
+            padding: 10px 20px;
+            color: $bg-dark;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            &:first-of-type {
+                background-color: #a09e9e;
+                &:hover {
+                    background-color: rgb(105, 101, 101);
+                }
+            }
+            &:last-of-type {
+                background-color: #f56c32;
+                &:hover {
+                    background-color: rgb(225, 78, 14);
+                }
+            }
+        }
+    }
+}
+/* home end */

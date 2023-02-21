@@ -1,0 +1,19 @@
+@mixin pad {
+    @media (max-width:767px) {
+        @content
+    }
+}
+@mixin mobile-row {
+    @media (max-width:569px) {
+        @content
+    }
+}
+@mixin mobile-col {
+    @media (max-width:375px) {
+        @content
+    }
+}
+@mixin container {
+    max-width: 1024px;
+    margin: 0 auto;
+}
